@@ -1,0 +1,14 @@
+dataframe_sql = sqlContext.read.format("jdbc").options(
+url ="jdbc:mysql://localhost/demo",
+driver="com.mysql.jdbc.Driver",
+dbtable="bank_details",
+user="root",
+password=""
+).load().take(20)
+
+source: https://www.supergloo.com/fieldnotes/spark-sql-mysql-python-example-jdbc/
+
+bin\spark-submit --conf spark.executor.extraClassPath=mysql-connector-java-5.0.8-bin.jar --driver-class-path mysql-connector-java-5.0.8-bin.jar --jars mysql-connector-java-5.0.8-bin.jar --master local[4] graph.py
+
+
+bin\spark-submit --conf spark.executor.extraClassPath=mysql-connector-java-5.1.42-bin.jar --driver-class-path mysql-connector-java-5.1.42-bin.jar --jars mysql-connector-java-5.1.42-bin.jar --master local[4] graph.py

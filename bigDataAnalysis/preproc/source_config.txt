@@ -1,0 +1,5 @@
+FILE_TYPE:MONGODB
+dbname:'k;lk';
+username:'lk';lk
+password:';lk';lk
+tname:'lk'lk'
