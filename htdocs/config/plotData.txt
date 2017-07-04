@@ -1,0 +1,7 @@
+RESPONSE_FLAG:1
+graphName:Bar chart
+labels:['no', 'yes']
+values:[20081, 25130]
+xtitle:housing
+ytitle:frequency
+title:housing

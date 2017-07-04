@@ -1,0 +1,8 @@
+age:int
+job:discrete
+marital:discrete
+education:discrete
+balance:int
+housing:boolean
+loan:boolean
+contact:discrete
